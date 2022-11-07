@@ -1,0 +1,679 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module main</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>main</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/Users/brianwen/Documents/CS003C/Assignments/finalProject/main.py">/Users/brianwen/Documents/CS003C/Assignments/finalProject/main.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="json.html">json</a><br>
+</td><td width="25%" valign=top><a href="pygame.html">pygame</a><br>
+</td><td width="25%" valign=top><a href="random.html">random</a><br>
+</td><td width="25%" valign=top><a href="sys.html">sys</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="main.html#Battleship">Battleship</a>
+</font></dt><dt><font face="helvetica, arial"><a href="main.html#Player">Player</a>
+</font></dt></dl>
+</dd>
+<dt><font face="helvetica, arial"><a href="pygame.sprite.html#Sprite">pygame.sprite.Sprite</a>(<a href="builtins.html#object">builtins.object</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="main.html#SpriteClass">SpriteClass</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="main.html#Attack">Attack</a>
+</font></dt><dt><font face="helvetica, arial"><a href="main.html#Board">Board</a>
+</font></dt><dt><font face="helvetica, arial"><a href="main.html#Missed">Missed</a>
+</font></dt><dt><font face="helvetica, arial"><a href="main.html#Ship">Ship</a>
+</font></dt></dl>
+</dd>
+</dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Attack">class <strong>Attack</strong></a>(<a href="main.html#SpriteClass">SpriteClass</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Attack">Attack</a>(x,&nbsp;y)<br>
+&nbsp;<br>
+<a href="#Attack">Attack</a>&nbsp;unit&nbsp;for&nbsp;when&nbsp;a&nbsp;hit&nbsp;is&nbsp;made<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="main.html#Attack">Attack</a></dd>
+<dd><a href="main.html#SpriteClass">SpriteClass</a></dd>
+<dd><a href="pygame.sprite.html#Sprite">pygame.sprite.Sprite</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Attack-__init__"><strong>__init__</strong></a>(self, x, y)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="main.html#SpriteClass">SpriteClass</a>:<br>
+<dl><dt><a name="Attack-loadImage"><strong>loadImage</strong></a>(self, x, y, filename)</dt></dl>
+
+<hr>
+Methods inherited from <a href="pygame.sprite.html#Sprite">pygame.sprite.Sprite</a>:<br>
+<dl><dt><a name="Attack-__repr__"><strong>__repr__</strong></a>(self)</dt><dd><tt>Return&nbsp;repr(self).</tt></dd></dl>
+
+<dl><dt><a name="Attack-add"><strong>add</strong></a>(self, *groups)</dt><dd><tt>add&nbsp;the&nbsp;sprite&nbsp;to&nbsp;groups<br>
+&nbsp;<br>
+<a href="pygame.sprite.html#Sprite">Sprite</a>.<a href="#Attack-add">add</a>(*groups):&nbsp;return&nbsp;None<br>
+&nbsp;<br>
+Any&nbsp;number&nbsp;of&nbsp;Group&nbsp;instances&nbsp;can&nbsp;be&nbsp;passed&nbsp;as&nbsp;arguments.&nbsp;The<br>
+<a href="pygame.sprite.html#Sprite">Sprite</a>&nbsp;will&nbsp;be&nbsp;added&nbsp;to&nbsp;the&nbsp;Groups&nbsp;it&nbsp;is&nbsp;not&nbsp;already&nbsp;a&nbsp;member&nbsp;of.</tt></dd></dl>
+
+<dl><dt><a name="Attack-add_internal"><strong>add_internal</strong></a>(self, group)</dt><dd><tt>For&nbsp;adding&nbsp;this&nbsp;sprite&nbsp;to&nbsp;a&nbsp;group&nbsp;internally.<br>
+&nbsp;<br>
+:param&nbsp;group:&nbsp;The&nbsp;group&nbsp;we&nbsp;are&nbsp;adding&nbsp;to.</tt></dd></dl>
+
+<dl><dt><a name="Attack-alive"><strong>alive</strong></a>(self)</dt><dd><tt>does&nbsp;the&nbsp;sprite&nbsp;belong&nbsp;to&nbsp;any&nbsp;groups<br>
+&nbsp;<br>
+<a href="pygame.sprite.html#Sprite">Sprite</a>.<a href="#Attack-alive">alive</a>():&nbsp;return&nbsp;bool<br>
+&nbsp;<br>
+Returns&nbsp;True&nbsp;when&nbsp;the&nbsp;<a href="pygame.sprite.html#Sprite">Sprite</a>&nbsp;belongs&nbsp;to&nbsp;one&nbsp;or&nbsp;more&nbsp;Groups.</tt></dd></dl>
+
+<dl><dt><a name="Attack-groups"><strong>groups</strong></a>(self)</dt><dd><tt>list&nbsp;of&nbsp;Groups&nbsp;that&nbsp;contain&nbsp;this&nbsp;<a href="pygame.sprite.html#Sprite">Sprite</a><br>
+&nbsp;<br>
+<a href="pygame.sprite.html#Sprite">Sprite</a>.<a href="#Attack-groups">groups</a>():&nbsp;return&nbsp;group_list<br>
+&nbsp;<br>
+Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;all&nbsp;the&nbsp;Groups&nbsp;that&nbsp;contain&nbsp;this&nbsp;<a href="pygame.sprite.html#Sprite">Sprite</a>.</tt></dd></dl>
+
+<dl><dt><a name="Attack-kill"><strong>kill</strong></a>(self)</dt><dd><tt>remove&nbsp;the&nbsp;<a href="pygame.sprite.html#Sprite">Sprite</a>&nbsp;from&nbsp;all&nbsp;Groups<br>
+&nbsp;<br>
+<a href="pygame.sprite.html#Sprite">Sprite</a>.<a href="#Attack-kill">kill</a>():&nbsp;return&nbsp;None<br>
+&nbsp;<br>
+The&nbsp;<a href="pygame.sprite.html#Sprite">Sprite</a>&nbsp;is&nbsp;removed&nbsp;from&nbsp;all&nbsp;the&nbsp;Groups&nbsp;that&nbsp;contain&nbsp;it.&nbsp;This&nbsp;won't<br>
+change&nbsp;anything&nbsp;about&nbsp;the&nbsp;state&nbsp;of&nbsp;the&nbsp;<a href="pygame.sprite.html#Sprite">Sprite</a>.&nbsp;It&nbsp;is&nbsp;possible&nbsp;to<br>
+continue&nbsp;to&nbsp;use&nbsp;the&nbsp;<a href="pygame.sprite.html#Sprite">Sprite</a>&nbsp;after&nbsp;this&nbsp;method&nbsp;has&nbsp;been&nbsp;called,&nbsp;including<br>
+adding&nbsp;it&nbsp;to&nbsp;Groups.</tt></dd></dl>
+
+<dl><dt><a name="Attack-remove"><strong>remove</strong></a>(self, *groups)</dt><dd><tt>remove&nbsp;the&nbsp;sprite&nbsp;from&nbsp;groups<br>
+&nbsp;<br>
+<a href="pygame.sprite.html#Sprite">Sprite</a>.<a href="#Attack-remove">remove</a>(*groups):&nbsp;return&nbsp;None<br>
+&nbsp;<br>
+Any&nbsp;number&nbsp;of&nbsp;Group&nbsp;instances&nbsp;can&nbsp;be&nbsp;passed&nbsp;as&nbsp;arguments.&nbsp;The&nbsp;<a href="pygame.sprite.html#Sprite">Sprite</a><br>
+will&nbsp;be&nbsp;removed&nbsp;from&nbsp;the&nbsp;Groups&nbsp;it&nbsp;is&nbsp;currently&nbsp;a&nbsp;member&nbsp;of.</tt></dd></dl>
+
+<dl><dt><a name="Attack-remove_internal"><strong>remove_internal</strong></a>(self, group)</dt><dd><tt>For&nbsp;removing&nbsp;this&nbsp;sprite&nbsp;from&nbsp;a&nbsp;group&nbsp;internally.<br>
+&nbsp;<br>
+:param&nbsp;group:&nbsp;The&nbsp;group&nbsp;we&nbsp;are&nbsp;removing&nbsp;from.</tt></dd></dl>
+
+<dl><dt><a name="Attack-update"><strong>update</strong></a>(self, *args, **kwargs)</dt><dd><tt>method&nbsp;to&nbsp;control&nbsp;sprite&nbsp;behavior<br>
+&nbsp;<br>
+<a href="pygame.sprite.html#Sprite">Sprite</a>.<a href="#Attack-update">update</a>(*args,&nbsp;**kwargs):<br>
+&nbsp;<br>
+The&nbsp;default&nbsp;implementation&nbsp;of&nbsp;this&nbsp;method&nbsp;does&nbsp;nothing;&nbsp;it's&nbsp;just&nbsp;a<br>
+convenient&nbsp;"hook"&nbsp;that&nbsp;you&nbsp;can&nbsp;override.&nbsp;This&nbsp;method&nbsp;is&nbsp;called&nbsp;by<br>
+Group.<a href="#Attack-update">update</a>()&nbsp;with&nbsp;whatever&nbsp;arguments&nbsp;you&nbsp;give&nbsp;it.<br>
+&nbsp;<br>
+There&nbsp;is&nbsp;no&nbsp;need&nbsp;to&nbsp;use&nbsp;this&nbsp;method&nbsp;if&nbsp;not&nbsp;using&nbsp;the&nbsp;convenience<br>
+method&nbsp;by&nbsp;the&nbsp;same&nbsp;name&nbsp;in&nbsp;the&nbsp;Group&nbsp;class.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="pygame.sprite.html#Sprite">pygame.sprite.Sprite</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>layer</strong></dt>
+<dd><tt>Dynamic,&nbsp;read&nbsp;only&nbsp;property&nbsp;for&nbsp;protected&nbsp;_layer&nbsp;attribute.<br>
+This&nbsp;will&nbsp;get&nbsp;the&nbsp;_layer&nbsp;variable&nbsp;if&nbsp;it&nbsp;exists.<br>
+&nbsp;<br>
+If&nbsp;you&nbsp;try&nbsp;to&nbsp;get&nbsp;it&nbsp;before&nbsp;it&nbsp;is&nbsp;set&nbsp;it&nbsp;will&nbsp;raise&nbsp;an&nbsp;attribute&nbsp;error.<br>
+&nbsp;<br>
+Layer&nbsp;property&nbsp;can&nbsp;only&nbsp;be&nbsp;set&nbsp;before&nbsp;the&nbsp;sprite&nbsp;is&nbsp;added&nbsp;to&nbsp;a&nbsp;group,<br>
+after&nbsp;that&nbsp;it&nbsp;is&nbsp;read&nbsp;only&nbsp;and&nbsp;a&nbsp;sprite's&nbsp;layer&nbsp;in&nbsp;a&nbsp;group&nbsp;should&nbsp;be<br>
+set&nbsp;via&nbsp;the&nbsp;group's&nbsp;change_layer()&nbsp;method.<br>
+&nbsp;<br>
+:return:&nbsp;layer&nbsp;as&nbsp;an&nbsp;int,&nbsp;or&nbsp;raise&nbsp;AttributeError.</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Battleship">class <strong>Battleship</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Provides&nbsp;functions&nbsp;to&nbsp;run&nbsp;and&nbsp;start&nbsp;a&nbsp;battleship&nbsp;game.&nbsp;The&nbsp;game&nbsp;will&nbsp;display&nbsp;on&nbsp;a&nbsp;900&nbsp;by&nbsp;500&nbsp;pixel&nbsp;screen.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Battleship-__init__"><strong>__init__</strong></a>(self)</dt><dd><tt>Initializes&nbsp;all&nbsp;the&nbsp;necessary&nbsp;game&nbsp;variables&nbsp;and&nbsp;starts&nbsp;the&nbsp;game</tt></dd></dl>
+
+<dl><dt><a name="Battleship-add"><strong>add</strong></a>(self, sprite)</dt><dd><tt>Adds&nbsp;a&nbsp;sprite&nbsp;to&nbsp;the&nbsp;group&nbsp;of&nbsp;sprites&nbsp;that&nbsp;gets&nbsp;displayed&nbsp;to&nbsp;the&nbsp;screen.<br>
+:param&nbsp;sprite:&nbsp;Expects&nbsp;an&nbsp;instance&nbsp;of&nbsp;<a href="#SpriteClass">SpriteClass</a>&nbsp;or&nbsp;one&nbsp;of&nbsp;its&nbsp;subclasses</tt></dd></dl>
+
+<dl><dt><a name="Battleship-changePotentials"><strong>changePotentials</strong></a>(self, row, col)</dt><dd><tt>If&nbsp;a&nbsp;cell&nbsp;is&nbsp;hit,&nbsp;then&nbsp;all&nbsp;the&nbsp;surrounding&nbsp;cells&nbsp;will&nbsp;be&nbsp;made&nbsp;true&nbsp;in&nbsp;the&nbsp;potentials&nbsp;array,&nbsp;only&nbsp;if&nbsp;the&nbsp;cell<br>
+has&nbsp;not&nbsp;already&nbsp;been&nbsp;visited.&nbsp;The&nbsp;length&nbsp;of&nbsp;this&nbsp;function&nbsp;comes&nbsp;from&nbsp;handling&nbsp;the&nbsp;edge&nbsp;cases.<br>
+:param&nbsp;row:&nbsp;number&nbsp;from&nbsp;1&nbsp;to&nbsp;10<br>
+:param&nbsp;col:&nbsp;number&nbsp;from&nbsp;1&nbsp;to&nbsp;10<br>
+:return:&nbsp;changes&nbsp;the&nbsp;"hunt"&nbsp;locations&nbsp;of&nbsp;the&nbsp;bot&nbsp;intelligence&nbsp;whenever&nbsp;hits&nbsp;are&nbsp;made&nbsp;by&nbsp;the&nbsp;computer</tt></dd></dl>
+
+<dl><dt><a name="Battleship-displayBoards"><strong>displayBoards</strong></a>(self)</dt><dd><tt>Called&nbsp;only&nbsp;when&nbsp;the&nbsp;game&nbsp;starts.&nbsp;Displays&nbsp;the&nbsp;player&nbsp;board&nbsp;and&nbsp;the&nbsp;guess&nbsp;board.</tt></dd></dl>
+
+<dl><dt><a name="Battleship-displayGameover"><strong>displayGameover</strong></a>(self, result: str)</dt><dd><tt>Called&nbsp;only&nbsp;when&nbsp;one&nbsp;of&nbsp;the&nbsp;shipCounts&nbsp;is&nbsp;set&nbsp;to&nbsp;zero<br>
+:param&nbsp;result:&nbsp;&nbsp;The&nbsp;result&nbsp;string&nbsp;to&nbsp;the&nbsp;displayed&nbsp;to&nbsp;the&nbsp;string<br>
+:return:&nbsp;Renders&nbsp;the&nbsp;text&nbsp;to&nbsp;be&nbsp;displayed&nbsp;onto&nbsp;the&nbsp;game&nbsp;over&nbsp;screen&nbsp;and&nbsp;sets&nbsp;both&nbsp;ship&nbsp;counts&nbsp;to&nbsp;None.</tt></dd></dl>
+
+<dl><dt><a name="Battleship-draw"><strong>draw</strong></a>(self)</dt><dd><tt>Draws&nbsp;allSprites&nbsp;group&nbsp;to&nbsp;the&nbsp;screen</tt></dd></dl>
+
+<dl><dt><a name="Battleship-getTicks"><strong>getTicks</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Battleship-initEnemyFleet"><strong>initEnemyFleet</strong></a>(self, letter, number, shipName, orient)</dt><dd><tt>:param&nbsp;letter:&nbsp;row&nbsp;letter&nbsp;of&nbsp;the&nbsp;starting&nbsp;position&nbsp;of&nbsp;the&nbsp;ship<br>
+:param&nbsp;number:&nbsp;column&nbsp;value&nbsp;of&nbsp;the&nbsp;starting&nbsp;position&nbsp;of&nbsp;the&nbsp;ship<br>
+:param&nbsp;shipName:&nbsp;string&nbsp;contains&nbsp;the&nbsp;ship&nbsp;name&nbsp;that&nbsp;will&nbsp;be&nbsp;added<br>
+:param&nbsp;orient:&nbsp;a&nbsp;single&nbsp;letter&nbsp;denoting&nbsp;the&nbsp;orientation&nbsp;of&nbsp;ship&nbsp;placement<br>
+:return:&nbsp;this&nbsp;function&nbsp;does&nbsp;not&nbsp;place&nbsp;any&nbsp;ships&nbsp;onto&nbsp;the&nbsp;screen.&nbsp;It&nbsp;will&nbsp;only&nbsp;alter&nbsp;the&nbsp;boolean&nbsp;array&nbsp;of&nbsp;the&nbsp;computer.</tt></dd></dl>
+
+<dl><dt><a name="Battleship-initFleet"><strong>initFleet</strong></a>(self, letter, number, shipName, orient)</dt><dd><tt>:param&nbsp;letter:&nbsp;row&nbsp;letter&nbsp;of&nbsp;the&nbsp;starting&nbsp;position&nbsp;of&nbsp;the&nbsp;ship<br>
+:param&nbsp;number:&nbsp;column&nbsp;value&nbsp;of&nbsp;the&nbsp;starting&nbsp;position&nbsp;of&nbsp;the&nbsp;ship<br>
+:param&nbsp;shipName:&nbsp;string&nbsp;contains&nbsp;the&nbsp;ship&nbsp;name&nbsp;that&nbsp;will&nbsp;be&nbsp;added<br>
+:param&nbsp;orient:&nbsp;a&nbsp;single&nbsp;letter&nbsp;denoting&nbsp;the&nbsp;orientation&nbsp;of&nbsp;ship&nbsp;placement<br>
+:return:&nbsp;this&nbsp;function&nbsp;will&nbsp;place&nbsp;the&nbsp;ships&nbsp;passed&nbsp;to&nbsp;it&nbsp;onto&nbsp;the&nbsp;players&nbsp;board</tt></dd></dl>
+
+<dl><dt><a name="Battleship-letterSwitch"><strong>letterSwitch</strong></a>(self, letter)</dt><dd><tt>:param&nbsp;letter:&nbsp;Single&nbsp;letter&nbsp;within&nbsp;the&nbsp;range&nbsp;of&nbsp;A&nbsp;-&nbsp;J<br>
+:return:&nbsp;Corresponding&nbsp;number&nbsp;in&nbsp;increasing&nbsp;order&nbsp;starting&nbsp;from&nbsp;A&nbsp;-&nbsp;1</tt></dd></dl>
+
+<dl><dt><a name="Battleship-loadJson"><strong>loadJson</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Battleship-run"><strong>run</strong></a>(self)</dt><dd><tt>Called&nbsp;every&nbsp;loop&nbsp;of&nbsp;the&nbsp;game.&nbsp;This&nbsp;is&nbsp;the&nbsp;game&nbsp;loop</tt></dd></dl>
+
+<dl><dt><a name="Battleship-sendAttack"><strong>sendAttack</strong></a>(self, inputString)</dt><dd><tt>:param&nbsp;inputString:&nbsp;this&nbsp;text&nbsp;is&nbsp;received&nbsp;from&nbsp;the&nbsp;textbox&nbsp;that&nbsp;is&nbsp;displayed&nbsp;on&nbsp;the&nbsp;screen.&nbsp;Called&nbsp;when&nbsp;return&nbsp;is&nbsp;hit<br>
+and&nbsp;whatever&nbsp;string&nbsp;is&nbsp;written&nbsp;in&nbsp;the&nbsp;text&nbsp;box&nbsp;will&nbsp;be&nbsp;passed&nbsp;into&nbsp;this&nbsp;function.<br>
+:return:&nbsp;Breaks&nbsp;down&nbsp;the&nbsp;string&nbsp;into&nbsp;smaller&nbsp;string&nbsp;using&nbsp;","&nbsp;and&nbsp;validates&nbsp;the&nbsp;input.&nbsp;If&nbsp;a&nbsp;hit&nbsp;is&nbsp;made,&nbsp;then&nbsp;a&nbsp;red<br>
+dot&nbsp;will&nbsp;be&nbsp;displayed&nbsp;on&nbsp;the&nbsp;guess&nbsp;board.&nbsp;If&nbsp;not,&nbsp;then&nbsp;a&nbsp;missed&nbsp;sprite&nbsp;will&nbsp;be&nbsp;placed&nbsp;at&nbsp;that&nbsp;position.&nbsp;After&nbsp;placing&nbsp;a<br>
+sprite,&nbsp;the&nbsp;sendComputerAttackFunction&nbsp;will&nbsp;be&nbsp;called.</tt></dd></dl>
+
+<dl><dt><a name="Battleship-sendComputerAttack"><strong>sendComputerAttack</strong></a>(self)</dt><dd><tt>Called&nbsp;only&nbsp;when&nbsp;the&nbsp;user&nbsp;has&nbsp;sent&nbsp;a&nbsp;valid&nbsp;shot.&nbsp;If&nbsp;the&nbsp;potentials&nbsp;array&nbsp;is&nbsp;all&nbsp;false,&nbsp;the&nbsp;computer&nbsp;will&nbsp;guess<br>
+randomly&nbsp;from&nbsp;the&nbsp;available&nbsp;positions.&nbsp;Whenever&nbsp;a&nbsp;hit&nbsp;is&nbsp;made,&nbsp;the&nbsp;proper&nbsp;surrounding&nbsp;cells&nbsp;are&nbsp;changed&nbsp;in&nbsp;the<br>
+potentials&nbsp;array.&nbsp;Whenever&nbsp;there&nbsp;are&nbsp;true&nbsp;values&nbsp;in&nbsp;the&nbsp;potentials&nbsp;array,&nbsp;the&nbsp;computer&nbsp;will&nbsp;play&nbsp;in&nbsp;hunt&nbsp;mode,&nbsp;and<br>
+search&nbsp;nearby&nbsp;cells&nbsp;until&nbsp;it&nbsp;sinks&nbsp;the&nbsp;ship.<br>
+:return:&nbsp;Sends&nbsp;either&nbsp;a&nbsp;random&nbsp;or&nbsp;intelligent&nbsp;shot&nbsp;from&nbsp;the&nbsp;computer.</tt></dd></dl>
+
+<dl><dt><a name="Battleship-update"><strong>update</strong></a>(self)</dt><dd><tt>Function&nbsp;that&nbsp;displays&nbsp;all&nbsp;sprites&nbsp;in&nbsp;the&nbsp;allSprites&nbsp;group&nbsp;at&nbsp;each&nbsp;loop&nbsp;of&nbsp;the&nbsp;game.</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Board">class <strong>Board</strong></a>(<a href="main.html#SpriteClass">SpriteClass</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Board">Board</a>(x,&nbsp;y)<br>
+&nbsp;<br>
+Grid&nbsp;for&nbsp;both&nbsp;boards<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="main.html#Board">Board</a></dd>
+<dd><a href="main.html#SpriteClass">SpriteClass</a></dd>
+<dd><a href="pygame.sprite.html#Sprite">pygame.sprite.Sprite</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Board-__init__"><strong>__init__</strong></a>(self, x, y)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="main.html#SpriteClass">SpriteClass</a>:<br>
+<dl><dt><a name="Board-loadImage"><strong>loadImage</strong></a>(self, x, y, filename)</dt></dl>
+
+<hr>
+Methods inherited from <a href="pygame.sprite.html#Sprite">pygame.sprite.Sprite</a>:<br>
+<dl><dt><a name="Board-__repr__"><strong>__repr__</strong></a>(self)</dt><dd><tt>Return&nbsp;repr(self).</tt></dd></dl>
+
+<dl><dt><a name="Board-add"><strong>add</strong></a>(self, *groups)</dt><dd><tt>add&nbsp;the&nbsp;sprite&nbsp;to&nbsp;groups<br>
+&nbsp;<br>
+<a href="pygame.sprite.html#Sprite">Sprite</a>.<a href="#Board-add">add</a>(*groups):&nbsp;return&nbsp;None<br>
+&nbsp;<br>
+Any&nbsp;number&nbsp;of&nbsp;Group&nbsp;instances&nbsp;can&nbsp;be&nbsp;passed&nbsp;as&nbsp;arguments.&nbsp;The<br>
+<a href="pygame.sprite.html#Sprite">Sprite</a>&nbsp;will&nbsp;be&nbsp;added&nbsp;to&nbsp;the&nbsp;Groups&nbsp;it&nbsp;is&nbsp;not&nbsp;already&nbsp;a&nbsp;member&nbsp;of.</tt></dd></dl>
+
+<dl><dt><a name="Board-add_internal"><strong>add_internal</strong></a>(self, group)</dt><dd><tt>For&nbsp;adding&nbsp;this&nbsp;sprite&nbsp;to&nbsp;a&nbsp;group&nbsp;internally.<br>
+&nbsp;<br>
+:param&nbsp;group:&nbsp;The&nbsp;group&nbsp;we&nbsp;are&nbsp;adding&nbsp;to.</tt></dd></dl>
+
+<dl><dt><a name="Board-alive"><strong>alive</strong></a>(self)</dt><dd><tt>does&nbsp;the&nbsp;sprite&nbsp;belong&nbsp;to&nbsp;any&nbsp;groups<br>
+&nbsp;<br>
+<a href="pygame.sprite.html#Sprite">Sprite</a>.<a href="#Board-alive">alive</a>():&nbsp;return&nbsp;bool<br>
+&nbsp;<br>
+Returns&nbsp;True&nbsp;when&nbsp;the&nbsp;<a href="pygame.sprite.html#Sprite">Sprite</a>&nbsp;belongs&nbsp;to&nbsp;one&nbsp;or&nbsp;more&nbsp;Groups.</tt></dd></dl>
+
+<dl><dt><a name="Board-groups"><strong>groups</strong></a>(self)</dt><dd><tt>list&nbsp;of&nbsp;Groups&nbsp;that&nbsp;contain&nbsp;this&nbsp;<a href="pygame.sprite.html#Sprite">Sprite</a><br>
+&nbsp;<br>
+<a href="pygame.sprite.html#Sprite">Sprite</a>.<a href="#Board-groups">groups</a>():&nbsp;return&nbsp;group_list<br>
+&nbsp;<br>
+Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;all&nbsp;the&nbsp;Groups&nbsp;that&nbsp;contain&nbsp;this&nbsp;<a href="pygame.sprite.html#Sprite">Sprite</a>.</tt></dd></dl>
+
+<dl><dt><a name="Board-kill"><strong>kill</strong></a>(self)</dt><dd><tt>remove&nbsp;the&nbsp;<a href="pygame.sprite.html#Sprite">Sprite</a>&nbsp;from&nbsp;all&nbsp;Groups<br>
+&nbsp;<br>
+<a href="pygame.sprite.html#Sprite">Sprite</a>.<a href="#Board-kill">kill</a>():&nbsp;return&nbsp;None<br>
+&nbsp;<br>
+The&nbsp;<a href="pygame.sprite.html#Sprite">Sprite</a>&nbsp;is&nbsp;removed&nbsp;from&nbsp;all&nbsp;the&nbsp;Groups&nbsp;that&nbsp;contain&nbsp;it.&nbsp;This&nbsp;won't<br>
+change&nbsp;anything&nbsp;about&nbsp;the&nbsp;state&nbsp;of&nbsp;the&nbsp;<a href="pygame.sprite.html#Sprite">Sprite</a>.&nbsp;It&nbsp;is&nbsp;possible&nbsp;to<br>
+continue&nbsp;to&nbsp;use&nbsp;the&nbsp;<a href="pygame.sprite.html#Sprite">Sprite</a>&nbsp;after&nbsp;this&nbsp;method&nbsp;has&nbsp;been&nbsp;called,&nbsp;including<br>
+adding&nbsp;it&nbsp;to&nbsp;Groups.</tt></dd></dl>
+
+<dl><dt><a name="Board-remove"><strong>remove</strong></a>(self, *groups)</dt><dd><tt>remove&nbsp;the&nbsp;sprite&nbsp;from&nbsp;groups<br>
+&nbsp;<br>
+<a href="pygame.sprite.html#Sprite">Sprite</a>.<a href="#Board-remove">remove</a>(*groups):&nbsp;return&nbsp;None<br>
+&nbsp;<br>
+Any&nbsp;number&nbsp;of&nbsp;Group&nbsp;instances&nbsp;can&nbsp;be&nbsp;passed&nbsp;as&nbsp;arguments.&nbsp;The&nbsp;<a href="pygame.sprite.html#Sprite">Sprite</a><br>
+will&nbsp;be&nbsp;removed&nbsp;from&nbsp;the&nbsp;Groups&nbsp;it&nbsp;is&nbsp;currently&nbsp;a&nbsp;member&nbsp;of.</tt></dd></dl>
+
+<dl><dt><a name="Board-remove_internal"><strong>remove_internal</strong></a>(self, group)</dt><dd><tt>For&nbsp;removing&nbsp;this&nbsp;sprite&nbsp;from&nbsp;a&nbsp;group&nbsp;internally.<br>
+&nbsp;<br>
+:param&nbsp;group:&nbsp;The&nbsp;group&nbsp;we&nbsp;are&nbsp;removing&nbsp;from.</tt></dd></dl>
+
+<dl><dt><a name="Board-update"><strong>update</strong></a>(self, *args, **kwargs)</dt><dd><tt>method&nbsp;to&nbsp;control&nbsp;sprite&nbsp;behavior<br>
+&nbsp;<br>
+<a href="pygame.sprite.html#Sprite">Sprite</a>.<a href="#Board-update">update</a>(*args,&nbsp;**kwargs):<br>
+&nbsp;<br>
+The&nbsp;default&nbsp;implementation&nbsp;of&nbsp;this&nbsp;method&nbsp;does&nbsp;nothing;&nbsp;it's&nbsp;just&nbsp;a<br>
+convenient&nbsp;"hook"&nbsp;that&nbsp;you&nbsp;can&nbsp;override.&nbsp;This&nbsp;method&nbsp;is&nbsp;called&nbsp;by<br>
+Group.<a href="#Board-update">update</a>()&nbsp;with&nbsp;whatever&nbsp;arguments&nbsp;you&nbsp;give&nbsp;it.<br>
+&nbsp;<br>
+There&nbsp;is&nbsp;no&nbsp;need&nbsp;to&nbsp;use&nbsp;this&nbsp;method&nbsp;if&nbsp;not&nbsp;using&nbsp;the&nbsp;convenience<br>
+method&nbsp;by&nbsp;the&nbsp;same&nbsp;name&nbsp;in&nbsp;the&nbsp;Group&nbsp;class.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="pygame.sprite.html#Sprite">pygame.sprite.Sprite</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>layer</strong></dt>
+<dd><tt>Dynamic,&nbsp;read&nbsp;only&nbsp;property&nbsp;for&nbsp;protected&nbsp;_layer&nbsp;attribute.<br>
+This&nbsp;will&nbsp;get&nbsp;the&nbsp;_layer&nbsp;variable&nbsp;if&nbsp;it&nbsp;exists.<br>
+&nbsp;<br>
+If&nbsp;you&nbsp;try&nbsp;to&nbsp;get&nbsp;it&nbsp;before&nbsp;it&nbsp;is&nbsp;set&nbsp;it&nbsp;will&nbsp;raise&nbsp;an&nbsp;attribute&nbsp;error.<br>
+&nbsp;<br>
+Layer&nbsp;property&nbsp;can&nbsp;only&nbsp;be&nbsp;set&nbsp;before&nbsp;the&nbsp;sprite&nbsp;is&nbsp;added&nbsp;to&nbsp;a&nbsp;group,<br>
+after&nbsp;that&nbsp;it&nbsp;is&nbsp;read&nbsp;only&nbsp;and&nbsp;a&nbsp;sprite's&nbsp;layer&nbsp;in&nbsp;a&nbsp;group&nbsp;should&nbsp;be<br>
+set&nbsp;via&nbsp;the&nbsp;group's&nbsp;change_layer()&nbsp;method.<br>
+&nbsp;<br>
+:return:&nbsp;layer&nbsp;as&nbsp;an&nbsp;int,&nbsp;or&nbsp;raise&nbsp;AttributeError.</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Missed">class <strong>Missed</strong></a>(<a href="main.html#SpriteClass">SpriteClass</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Missed">Missed</a>(x,&nbsp;y)<br>
+&nbsp;<br>
+<a href="pygame.sprite.html#Sprite">Sprite</a>&nbsp;that&nbsp;displays&nbsp;a&nbsp;missed&nbsp;attempt&nbsp;by&nbsp;the&nbsp;player<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="main.html#Missed">Missed</a></dd>
+<dd><a href="main.html#SpriteClass">SpriteClass</a></dd>
+<dd><a href="pygame.sprite.html#Sprite">pygame.sprite.Sprite</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Missed-__init__"><strong>__init__</strong></a>(self, x, y)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="main.html#SpriteClass">SpriteClass</a>:<br>
+<dl><dt><a name="Missed-loadImage"><strong>loadImage</strong></a>(self, x, y, filename)</dt></dl>
+
+<hr>
+Methods inherited from <a href="pygame.sprite.html#Sprite">pygame.sprite.Sprite</a>:<br>
+<dl><dt><a name="Missed-__repr__"><strong>__repr__</strong></a>(self)</dt><dd><tt>Return&nbsp;repr(self).</tt></dd></dl>
+
+<dl><dt><a name="Missed-add"><strong>add</strong></a>(self, *groups)</dt><dd><tt>add&nbsp;the&nbsp;sprite&nbsp;to&nbsp;groups<br>
+&nbsp;<br>
+<a href="pygame.sprite.html#Sprite">Sprite</a>.<a href="#Missed-add">add</a>(*groups):&nbsp;return&nbsp;None<br>
+&nbsp;<br>
+Any&nbsp;number&nbsp;of&nbsp;Group&nbsp;instances&nbsp;can&nbsp;be&nbsp;passed&nbsp;as&nbsp;arguments.&nbsp;The<br>
+<a href="pygame.sprite.html#Sprite">Sprite</a>&nbsp;will&nbsp;be&nbsp;added&nbsp;to&nbsp;the&nbsp;Groups&nbsp;it&nbsp;is&nbsp;not&nbsp;already&nbsp;a&nbsp;member&nbsp;of.</tt></dd></dl>
+
+<dl><dt><a name="Missed-add_internal"><strong>add_internal</strong></a>(self, group)</dt><dd><tt>For&nbsp;adding&nbsp;this&nbsp;sprite&nbsp;to&nbsp;a&nbsp;group&nbsp;internally.<br>
+&nbsp;<br>
+:param&nbsp;group:&nbsp;The&nbsp;group&nbsp;we&nbsp;are&nbsp;adding&nbsp;to.</tt></dd></dl>
+
+<dl><dt><a name="Missed-alive"><strong>alive</strong></a>(self)</dt><dd><tt>does&nbsp;the&nbsp;sprite&nbsp;belong&nbsp;to&nbsp;any&nbsp;groups<br>
+&nbsp;<br>
+<a href="pygame.sprite.html#Sprite">Sprite</a>.<a href="#Missed-alive">alive</a>():&nbsp;return&nbsp;bool<br>
+&nbsp;<br>
+Returns&nbsp;True&nbsp;when&nbsp;the&nbsp;<a href="pygame.sprite.html#Sprite">Sprite</a>&nbsp;belongs&nbsp;to&nbsp;one&nbsp;or&nbsp;more&nbsp;Groups.</tt></dd></dl>
+
+<dl><dt><a name="Missed-groups"><strong>groups</strong></a>(self)</dt><dd><tt>list&nbsp;of&nbsp;Groups&nbsp;that&nbsp;contain&nbsp;this&nbsp;<a href="pygame.sprite.html#Sprite">Sprite</a><br>
+&nbsp;<br>
+<a href="pygame.sprite.html#Sprite">Sprite</a>.<a href="#Missed-groups">groups</a>():&nbsp;return&nbsp;group_list<br>
+&nbsp;<br>
+Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;all&nbsp;the&nbsp;Groups&nbsp;that&nbsp;contain&nbsp;this&nbsp;<a href="pygame.sprite.html#Sprite">Sprite</a>.</tt></dd></dl>
+
+<dl><dt><a name="Missed-kill"><strong>kill</strong></a>(self)</dt><dd><tt>remove&nbsp;the&nbsp;<a href="pygame.sprite.html#Sprite">Sprite</a>&nbsp;from&nbsp;all&nbsp;Groups<br>
+&nbsp;<br>
+<a href="pygame.sprite.html#Sprite">Sprite</a>.<a href="#Missed-kill">kill</a>():&nbsp;return&nbsp;None<br>
+&nbsp;<br>
+The&nbsp;<a href="pygame.sprite.html#Sprite">Sprite</a>&nbsp;is&nbsp;removed&nbsp;from&nbsp;all&nbsp;the&nbsp;Groups&nbsp;that&nbsp;contain&nbsp;it.&nbsp;This&nbsp;won't<br>
+change&nbsp;anything&nbsp;about&nbsp;the&nbsp;state&nbsp;of&nbsp;the&nbsp;<a href="pygame.sprite.html#Sprite">Sprite</a>.&nbsp;It&nbsp;is&nbsp;possible&nbsp;to<br>
+continue&nbsp;to&nbsp;use&nbsp;the&nbsp;<a href="pygame.sprite.html#Sprite">Sprite</a>&nbsp;after&nbsp;this&nbsp;method&nbsp;has&nbsp;been&nbsp;called,&nbsp;including<br>
+adding&nbsp;it&nbsp;to&nbsp;Groups.</tt></dd></dl>
+
+<dl><dt><a name="Missed-remove"><strong>remove</strong></a>(self, *groups)</dt><dd><tt>remove&nbsp;the&nbsp;sprite&nbsp;from&nbsp;groups<br>
+&nbsp;<br>
+<a href="pygame.sprite.html#Sprite">Sprite</a>.<a href="#Missed-remove">remove</a>(*groups):&nbsp;return&nbsp;None<br>
+&nbsp;<br>
+Any&nbsp;number&nbsp;of&nbsp;Group&nbsp;instances&nbsp;can&nbsp;be&nbsp;passed&nbsp;as&nbsp;arguments.&nbsp;The&nbsp;<a href="pygame.sprite.html#Sprite">Sprite</a><br>
+will&nbsp;be&nbsp;removed&nbsp;from&nbsp;the&nbsp;Groups&nbsp;it&nbsp;is&nbsp;currently&nbsp;a&nbsp;member&nbsp;of.</tt></dd></dl>
+
+<dl><dt><a name="Missed-remove_internal"><strong>remove_internal</strong></a>(self, group)</dt><dd><tt>For&nbsp;removing&nbsp;this&nbsp;sprite&nbsp;from&nbsp;a&nbsp;group&nbsp;internally.<br>
+&nbsp;<br>
+:param&nbsp;group:&nbsp;The&nbsp;group&nbsp;we&nbsp;are&nbsp;removing&nbsp;from.</tt></dd></dl>
+
+<dl><dt><a name="Missed-update"><strong>update</strong></a>(self, *args, **kwargs)</dt><dd><tt>method&nbsp;to&nbsp;control&nbsp;sprite&nbsp;behavior<br>
+&nbsp;<br>
+<a href="pygame.sprite.html#Sprite">Sprite</a>.<a href="#Missed-update">update</a>(*args,&nbsp;**kwargs):<br>
+&nbsp;<br>
+The&nbsp;default&nbsp;implementation&nbsp;of&nbsp;this&nbsp;method&nbsp;does&nbsp;nothing;&nbsp;it's&nbsp;just&nbsp;a<br>
+convenient&nbsp;"hook"&nbsp;that&nbsp;you&nbsp;can&nbsp;override.&nbsp;This&nbsp;method&nbsp;is&nbsp;called&nbsp;by<br>
+Group.<a href="#Missed-update">update</a>()&nbsp;with&nbsp;whatever&nbsp;arguments&nbsp;you&nbsp;give&nbsp;it.<br>
+&nbsp;<br>
+There&nbsp;is&nbsp;no&nbsp;need&nbsp;to&nbsp;use&nbsp;this&nbsp;method&nbsp;if&nbsp;not&nbsp;using&nbsp;the&nbsp;convenience<br>
+method&nbsp;by&nbsp;the&nbsp;same&nbsp;name&nbsp;in&nbsp;the&nbsp;Group&nbsp;class.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="pygame.sprite.html#Sprite">pygame.sprite.Sprite</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>layer</strong></dt>
+<dd><tt>Dynamic,&nbsp;read&nbsp;only&nbsp;property&nbsp;for&nbsp;protected&nbsp;_layer&nbsp;attribute.<br>
+This&nbsp;will&nbsp;get&nbsp;the&nbsp;_layer&nbsp;variable&nbsp;if&nbsp;it&nbsp;exists.<br>
+&nbsp;<br>
+If&nbsp;you&nbsp;try&nbsp;to&nbsp;get&nbsp;it&nbsp;before&nbsp;it&nbsp;is&nbsp;set&nbsp;it&nbsp;will&nbsp;raise&nbsp;an&nbsp;attribute&nbsp;error.<br>
+&nbsp;<br>
+Layer&nbsp;property&nbsp;can&nbsp;only&nbsp;be&nbsp;set&nbsp;before&nbsp;the&nbsp;sprite&nbsp;is&nbsp;added&nbsp;to&nbsp;a&nbsp;group,<br>
+after&nbsp;that&nbsp;it&nbsp;is&nbsp;read&nbsp;only&nbsp;and&nbsp;a&nbsp;sprite's&nbsp;layer&nbsp;in&nbsp;a&nbsp;group&nbsp;should&nbsp;be<br>
+set&nbsp;via&nbsp;the&nbsp;group's&nbsp;change_layer()&nbsp;method.<br>
+&nbsp;<br>
+:return:&nbsp;layer&nbsp;as&nbsp;an&nbsp;int,&nbsp;or&nbsp;raise&nbsp;AttributeError.</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Player">class <strong>Player</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Holds&nbsp;a&nbsp;2d&nbsp;array&nbsp;of&nbsp;boolean&nbsp;values&nbsp;(all&nbsp;false&nbsp;initially)<br>
+The&nbsp;functions&nbsp;provided&nbsp;allow&nbsp;the&nbsp;class&nbsp;user&nbsp;to&nbsp;toggle&nbsp;the&nbsp;boolean&nbsp;value&nbsp;and&nbsp;see&nbsp;if&nbsp;it&nbsp;is&nbsp;set&nbsp;to&nbsp;True<br>
+The&nbsp;function&nbsp;isAllFalse&nbsp;tests&nbsp;whether&nbsp;there&nbsp;are&nbsp;any&nbsp;True&nbsp;values&nbsp;in&nbsp;the&nbsp;2d&nbsp;array.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Player-__init__"><strong>__init__</strong></a>(self)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="Player-isAllFalse"><strong>isAllFalse</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Player-isTrue"><strong>isTrue</strong></a>(self, row, col)</dt><dd><tt>:param&nbsp;row:&nbsp;integer&nbsp;-&nbsp;row&nbsp;value<br>
+:param&nbsp;col:&nbsp;integer&nbsp;-&nbsp;column&nbsp;value<br>
+:return:&nbsp;True&nbsp;if&nbsp;the&nbsp;corresponding&nbsp;instance&nbsp;array&nbsp;value&nbsp;is&nbsp;True</tt></dd></dl>
+
+<dl><dt><a name="Player-makeFalse"><strong>makeFalse</strong></a>(self, row, col)</dt></dl>
+
+<dl><dt><a name="Player-makeTrue"><strong>makeTrue</strong></a>(self, row, col)</dt></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Ship">class <strong>Ship</strong></a>(<a href="main.html#SpriteClass">SpriteClass</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Ship">Ship</a>(x,&nbsp;y)<br>
+&nbsp;<br>
+Represents&nbsp;a&nbsp;unit&nbsp;of&nbsp;a&nbsp;<a href="#Ship">Ship</a><br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="main.html#Ship">Ship</a></dd>
+<dd><a href="main.html#SpriteClass">SpriteClass</a></dd>
+<dd><a href="pygame.sprite.html#Sprite">pygame.sprite.Sprite</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Ship-__init__"><strong>__init__</strong></a>(self, x, y)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="main.html#SpriteClass">SpriteClass</a>:<br>
+<dl><dt><a name="Ship-loadImage"><strong>loadImage</strong></a>(self, x, y, filename)</dt></dl>
+
+<hr>
+Methods inherited from <a href="pygame.sprite.html#Sprite">pygame.sprite.Sprite</a>:<br>
+<dl><dt><a name="Ship-__repr__"><strong>__repr__</strong></a>(self)</dt><dd><tt>Return&nbsp;repr(self).</tt></dd></dl>
+
+<dl><dt><a name="Ship-add"><strong>add</strong></a>(self, *groups)</dt><dd><tt>add&nbsp;the&nbsp;sprite&nbsp;to&nbsp;groups<br>
+&nbsp;<br>
+<a href="pygame.sprite.html#Sprite">Sprite</a>.<a href="#Ship-add">add</a>(*groups):&nbsp;return&nbsp;None<br>
+&nbsp;<br>
+Any&nbsp;number&nbsp;of&nbsp;Group&nbsp;instances&nbsp;can&nbsp;be&nbsp;passed&nbsp;as&nbsp;arguments.&nbsp;The<br>
+<a href="pygame.sprite.html#Sprite">Sprite</a>&nbsp;will&nbsp;be&nbsp;added&nbsp;to&nbsp;the&nbsp;Groups&nbsp;it&nbsp;is&nbsp;not&nbsp;already&nbsp;a&nbsp;member&nbsp;of.</tt></dd></dl>
+
+<dl><dt><a name="Ship-add_internal"><strong>add_internal</strong></a>(self, group)</dt><dd><tt>For&nbsp;adding&nbsp;this&nbsp;sprite&nbsp;to&nbsp;a&nbsp;group&nbsp;internally.<br>
+&nbsp;<br>
+:param&nbsp;group:&nbsp;The&nbsp;group&nbsp;we&nbsp;are&nbsp;adding&nbsp;to.</tt></dd></dl>
+
+<dl><dt><a name="Ship-alive"><strong>alive</strong></a>(self)</dt><dd><tt>does&nbsp;the&nbsp;sprite&nbsp;belong&nbsp;to&nbsp;any&nbsp;groups<br>
+&nbsp;<br>
+<a href="pygame.sprite.html#Sprite">Sprite</a>.<a href="#Ship-alive">alive</a>():&nbsp;return&nbsp;bool<br>
+&nbsp;<br>
+Returns&nbsp;True&nbsp;when&nbsp;the&nbsp;<a href="pygame.sprite.html#Sprite">Sprite</a>&nbsp;belongs&nbsp;to&nbsp;one&nbsp;or&nbsp;more&nbsp;Groups.</tt></dd></dl>
+
+<dl><dt><a name="Ship-groups"><strong>groups</strong></a>(self)</dt><dd><tt>list&nbsp;of&nbsp;Groups&nbsp;that&nbsp;contain&nbsp;this&nbsp;<a href="pygame.sprite.html#Sprite">Sprite</a><br>
+&nbsp;<br>
+<a href="pygame.sprite.html#Sprite">Sprite</a>.<a href="#Ship-groups">groups</a>():&nbsp;return&nbsp;group_list<br>
+&nbsp;<br>
+Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;all&nbsp;the&nbsp;Groups&nbsp;that&nbsp;contain&nbsp;this&nbsp;<a href="pygame.sprite.html#Sprite">Sprite</a>.</tt></dd></dl>
+
+<dl><dt><a name="Ship-kill"><strong>kill</strong></a>(self)</dt><dd><tt>remove&nbsp;the&nbsp;<a href="pygame.sprite.html#Sprite">Sprite</a>&nbsp;from&nbsp;all&nbsp;Groups<br>
+&nbsp;<br>
+<a href="pygame.sprite.html#Sprite">Sprite</a>.<a href="#Ship-kill">kill</a>():&nbsp;return&nbsp;None<br>
+&nbsp;<br>
+The&nbsp;<a href="pygame.sprite.html#Sprite">Sprite</a>&nbsp;is&nbsp;removed&nbsp;from&nbsp;all&nbsp;the&nbsp;Groups&nbsp;that&nbsp;contain&nbsp;it.&nbsp;This&nbsp;won't<br>
+change&nbsp;anything&nbsp;about&nbsp;the&nbsp;state&nbsp;of&nbsp;the&nbsp;<a href="pygame.sprite.html#Sprite">Sprite</a>.&nbsp;It&nbsp;is&nbsp;possible&nbsp;to<br>
+continue&nbsp;to&nbsp;use&nbsp;the&nbsp;<a href="pygame.sprite.html#Sprite">Sprite</a>&nbsp;after&nbsp;this&nbsp;method&nbsp;has&nbsp;been&nbsp;called,&nbsp;including<br>
+adding&nbsp;it&nbsp;to&nbsp;Groups.</tt></dd></dl>
+
+<dl><dt><a name="Ship-remove"><strong>remove</strong></a>(self, *groups)</dt><dd><tt>remove&nbsp;the&nbsp;sprite&nbsp;from&nbsp;groups<br>
+&nbsp;<br>
+<a href="pygame.sprite.html#Sprite">Sprite</a>.<a href="#Ship-remove">remove</a>(*groups):&nbsp;return&nbsp;None<br>
+&nbsp;<br>
+Any&nbsp;number&nbsp;of&nbsp;Group&nbsp;instances&nbsp;can&nbsp;be&nbsp;passed&nbsp;as&nbsp;arguments.&nbsp;The&nbsp;<a href="pygame.sprite.html#Sprite">Sprite</a><br>
+will&nbsp;be&nbsp;removed&nbsp;from&nbsp;the&nbsp;Groups&nbsp;it&nbsp;is&nbsp;currently&nbsp;a&nbsp;member&nbsp;of.</tt></dd></dl>
+
+<dl><dt><a name="Ship-remove_internal"><strong>remove_internal</strong></a>(self, group)</dt><dd><tt>For&nbsp;removing&nbsp;this&nbsp;sprite&nbsp;from&nbsp;a&nbsp;group&nbsp;internally.<br>
+&nbsp;<br>
+:param&nbsp;group:&nbsp;The&nbsp;group&nbsp;we&nbsp;are&nbsp;removing&nbsp;from.</tt></dd></dl>
+
+<dl><dt><a name="Ship-update"><strong>update</strong></a>(self, *args, **kwargs)</dt><dd><tt>method&nbsp;to&nbsp;control&nbsp;sprite&nbsp;behavior<br>
+&nbsp;<br>
+<a href="pygame.sprite.html#Sprite">Sprite</a>.<a href="#Ship-update">update</a>(*args,&nbsp;**kwargs):<br>
+&nbsp;<br>
+The&nbsp;default&nbsp;implementation&nbsp;of&nbsp;this&nbsp;method&nbsp;does&nbsp;nothing;&nbsp;it's&nbsp;just&nbsp;a<br>
+convenient&nbsp;"hook"&nbsp;that&nbsp;you&nbsp;can&nbsp;override.&nbsp;This&nbsp;method&nbsp;is&nbsp;called&nbsp;by<br>
+Group.<a href="#Ship-update">update</a>()&nbsp;with&nbsp;whatever&nbsp;arguments&nbsp;you&nbsp;give&nbsp;it.<br>
+&nbsp;<br>
+There&nbsp;is&nbsp;no&nbsp;need&nbsp;to&nbsp;use&nbsp;this&nbsp;method&nbsp;if&nbsp;not&nbsp;using&nbsp;the&nbsp;convenience<br>
+method&nbsp;by&nbsp;the&nbsp;same&nbsp;name&nbsp;in&nbsp;the&nbsp;Group&nbsp;class.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="pygame.sprite.html#Sprite">pygame.sprite.Sprite</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>layer</strong></dt>
+<dd><tt>Dynamic,&nbsp;read&nbsp;only&nbsp;property&nbsp;for&nbsp;protected&nbsp;_layer&nbsp;attribute.<br>
+This&nbsp;will&nbsp;get&nbsp;the&nbsp;_layer&nbsp;variable&nbsp;if&nbsp;it&nbsp;exists.<br>
+&nbsp;<br>
+If&nbsp;you&nbsp;try&nbsp;to&nbsp;get&nbsp;it&nbsp;before&nbsp;it&nbsp;is&nbsp;set&nbsp;it&nbsp;will&nbsp;raise&nbsp;an&nbsp;attribute&nbsp;error.<br>
+&nbsp;<br>
+Layer&nbsp;property&nbsp;can&nbsp;only&nbsp;be&nbsp;set&nbsp;before&nbsp;the&nbsp;sprite&nbsp;is&nbsp;added&nbsp;to&nbsp;a&nbsp;group,<br>
+after&nbsp;that&nbsp;it&nbsp;is&nbsp;read&nbsp;only&nbsp;and&nbsp;a&nbsp;sprite's&nbsp;layer&nbsp;in&nbsp;a&nbsp;group&nbsp;should&nbsp;be<br>
+set&nbsp;via&nbsp;the&nbsp;group's&nbsp;change_layer()&nbsp;method.<br>
+&nbsp;<br>
+:return:&nbsp;layer&nbsp;as&nbsp;an&nbsp;int,&nbsp;or&nbsp;raise&nbsp;AttributeError.</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="SpriteClass">class <strong>SpriteClass</strong></a>(<a href="pygame.sprite.html#Sprite">pygame.sprite.Sprite</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#SpriteClass">SpriteClass</a>(x,&nbsp;y,&nbsp;filename)<br>
+&nbsp;<br>
+Taken&nbsp;from&nbsp;the&nbsp;textbook&nbsp;ImageSprite&nbsp;class.&nbsp;Creates&nbsp;a&nbsp;sprite&nbsp;representation&nbsp;given&nbsp;a&nbsp;position&nbsp;and&nbsp;filename<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="main.html#SpriteClass">SpriteClass</a></dd>
+<dd><a href="pygame.sprite.html#Sprite">pygame.sprite.Sprite</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="SpriteClass-__init__"><strong>__init__</strong></a>(self, x, y, filename)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="SpriteClass-loadImage"><strong>loadImage</strong></a>(self, x, y, filename)</dt></dl>
+
+<hr>
+Methods inherited from <a href="pygame.sprite.html#Sprite">pygame.sprite.Sprite</a>:<br>
+<dl><dt><a name="SpriteClass-__repr__"><strong>__repr__</strong></a>(self)</dt><dd><tt>Return&nbsp;repr(self).</tt></dd></dl>
+
+<dl><dt><a name="SpriteClass-add"><strong>add</strong></a>(self, *groups)</dt><dd><tt>add&nbsp;the&nbsp;sprite&nbsp;to&nbsp;groups<br>
+&nbsp;<br>
+<a href="pygame.sprite.html#Sprite">Sprite</a>.<a href="#SpriteClass-add">add</a>(*groups):&nbsp;return&nbsp;None<br>
+&nbsp;<br>
+Any&nbsp;number&nbsp;of&nbsp;Group&nbsp;instances&nbsp;can&nbsp;be&nbsp;passed&nbsp;as&nbsp;arguments.&nbsp;The<br>
+<a href="pygame.sprite.html#Sprite">Sprite</a>&nbsp;will&nbsp;be&nbsp;added&nbsp;to&nbsp;the&nbsp;Groups&nbsp;it&nbsp;is&nbsp;not&nbsp;already&nbsp;a&nbsp;member&nbsp;of.</tt></dd></dl>
+
+<dl><dt><a name="SpriteClass-add_internal"><strong>add_internal</strong></a>(self, group)</dt><dd><tt>For&nbsp;adding&nbsp;this&nbsp;sprite&nbsp;to&nbsp;a&nbsp;group&nbsp;internally.<br>
+&nbsp;<br>
+:param&nbsp;group:&nbsp;The&nbsp;group&nbsp;we&nbsp;are&nbsp;adding&nbsp;to.</tt></dd></dl>
+
+<dl><dt><a name="SpriteClass-alive"><strong>alive</strong></a>(self)</dt><dd><tt>does&nbsp;the&nbsp;sprite&nbsp;belong&nbsp;to&nbsp;any&nbsp;groups<br>
+&nbsp;<br>
+<a href="pygame.sprite.html#Sprite">Sprite</a>.<a href="#SpriteClass-alive">alive</a>():&nbsp;return&nbsp;bool<br>
+&nbsp;<br>
+Returns&nbsp;True&nbsp;when&nbsp;the&nbsp;<a href="pygame.sprite.html#Sprite">Sprite</a>&nbsp;belongs&nbsp;to&nbsp;one&nbsp;or&nbsp;more&nbsp;Groups.</tt></dd></dl>
+
+<dl><dt><a name="SpriteClass-groups"><strong>groups</strong></a>(self)</dt><dd><tt>list&nbsp;of&nbsp;Groups&nbsp;that&nbsp;contain&nbsp;this&nbsp;<a href="pygame.sprite.html#Sprite">Sprite</a><br>
+&nbsp;<br>
+<a href="pygame.sprite.html#Sprite">Sprite</a>.<a href="#SpriteClass-groups">groups</a>():&nbsp;return&nbsp;group_list<br>
+&nbsp;<br>
+Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;all&nbsp;the&nbsp;Groups&nbsp;that&nbsp;contain&nbsp;this&nbsp;<a href="pygame.sprite.html#Sprite">Sprite</a>.</tt></dd></dl>
+
+<dl><dt><a name="SpriteClass-kill"><strong>kill</strong></a>(self)</dt><dd><tt>remove&nbsp;the&nbsp;<a href="pygame.sprite.html#Sprite">Sprite</a>&nbsp;from&nbsp;all&nbsp;Groups<br>
+&nbsp;<br>
+<a href="pygame.sprite.html#Sprite">Sprite</a>.<a href="#SpriteClass-kill">kill</a>():&nbsp;return&nbsp;None<br>
+&nbsp;<br>
+The&nbsp;<a href="pygame.sprite.html#Sprite">Sprite</a>&nbsp;is&nbsp;removed&nbsp;from&nbsp;all&nbsp;the&nbsp;Groups&nbsp;that&nbsp;contain&nbsp;it.&nbsp;This&nbsp;won't<br>
+change&nbsp;anything&nbsp;about&nbsp;the&nbsp;state&nbsp;of&nbsp;the&nbsp;<a href="pygame.sprite.html#Sprite">Sprite</a>.&nbsp;It&nbsp;is&nbsp;possible&nbsp;to<br>
+continue&nbsp;to&nbsp;use&nbsp;the&nbsp;<a href="pygame.sprite.html#Sprite">Sprite</a>&nbsp;after&nbsp;this&nbsp;method&nbsp;has&nbsp;been&nbsp;called,&nbsp;including<br>
+adding&nbsp;it&nbsp;to&nbsp;Groups.</tt></dd></dl>
+
+<dl><dt><a name="SpriteClass-remove"><strong>remove</strong></a>(self, *groups)</dt><dd><tt>remove&nbsp;the&nbsp;sprite&nbsp;from&nbsp;groups<br>
+&nbsp;<br>
+<a href="pygame.sprite.html#Sprite">Sprite</a>.<a href="#SpriteClass-remove">remove</a>(*groups):&nbsp;return&nbsp;None<br>
+&nbsp;<br>
+Any&nbsp;number&nbsp;of&nbsp;Group&nbsp;instances&nbsp;can&nbsp;be&nbsp;passed&nbsp;as&nbsp;arguments.&nbsp;The&nbsp;<a href="pygame.sprite.html#Sprite">Sprite</a><br>
+will&nbsp;be&nbsp;removed&nbsp;from&nbsp;the&nbsp;Groups&nbsp;it&nbsp;is&nbsp;currently&nbsp;a&nbsp;member&nbsp;of.</tt></dd></dl>
+
+<dl><dt><a name="SpriteClass-remove_internal"><strong>remove_internal</strong></a>(self, group)</dt><dd><tt>For&nbsp;removing&nbsp;this&nbsp;sprite&nbsp;from&nbsp;a&nbsp;group&nbsp;internally.<br>
+&nbsp;<br>
+:param&nbsp;group:&nbsp;The&nbsp;group&nbsp;we&nbsp;are&nbsp;removing&nbsp;from.</tt></dd></dl>
+
+<dl><dt><a name="SpriteClass-update"><strong>update</strong></a>(self, *args, **kwargs)</dt><dd><tt>method&nbsp;to&nbsp;control&nbsp;sprite&nbsp;behavior<br>
+&nbsp;<br>
+<a href="pygame.sprite.html#Sprite">Sprite</a>.<a href="#SpriteClass-update">update</a>(*args,&nbsp;**kwargs):<br>
+&nbsp;<br>
+The&nbsp;default&nbsp;implementation&nbsp;of&nbsp;this&nbsp;method&nbsp;does&nbsp;nothing;&nbsp;it's&nbsp;just&nbsp;a<br>
+convenient&nbsp;"hook"&nbsp;that&nbsp;you&nbsp;can&nbsp;override.&nbsp;This&nbsp;method&nbsp;is&nbsp;called&nbsp;by<br>
+Group.<a href="#SpriteClass-update">update</a>()&nbsp;with&nbsp;whatever&nbsp;arguments&nbsp;you&nbsp;give&nbsp;it.<br>
+&nbsp;<br>
+There&nbsp;is&nbsp;no&nbsp;need&nbsp;to&nbsp;use&nbsp;this&nbsp;method&nbsp;if&nbsp;not&nbsp;using&nbsp;the&nbsp;convenience<br>
+method&nbsp;by&nbsp;the&nbsp;same&nbsp;name&nbsp;in&nbsp;the&nbsp;Group&nbsp;class.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="pygame.sprite.html#Sprite">pygame.sprite.Sprite</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>layer</strong></dt>
+<dd><tt>Dynamic,&nbsp;read&nbsp;only&nbsp;property&nbsp;for&nbsp;protected&nbsp;_layer&nbsp;attribute.<br>
+This&nbsp;will&nbsp;get&nbsp;the&nbsp;_layer&nbsp;variable&nbsp;if&nbsp;it&nbsp;exists.<br>
+&nbsp;<br>
+If&nbsp;you&nbsp;try&nbsp;to&nbsp;get&nbsp;it&nbsp;before&nbsp;it&nbsp;is&nbsp;set&nbsp;it&nbsp;will&nbsp;raise&nbsp;an&nbsp;attribute&nbsp;error.<br>
+&nbsp;<br>
+Layer&nbsp;property&nbsp;can&nbsp;only&nbsp;be&nbsp;set&nbsp;before&nbsp;the&nbsp;sprite&nbsp;is&nbsp;added&nbsp;to&nbsp;a&nbsp;group,<br>
+after&nbsp;that&nbsp;it&nbsp;is&nbsp;read&nbsp;only&nbsp;and&nbsp;a&nbsp;sprite's&nbsp;layer&nbsp;in&nbsp;a&nbsp;group&nbsp;should&nbsp;be<br>
+set&nbsp;via&nbsp;the&nbsp;group's&nbsp;change_layer()&nbsp;method.<br>
+&nbsp;<br>
+:return:&nbsp;layer&nbsp;as&nbsp;an&nbsp;int,&nbsp;or&nbsp;raise&nbsp;AttributeError.</tt></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-main"><strong>main</strong></a>()</dt><dd><tt>Creates&nbsp;and&nbsp;runs&nbsp;a&nbsp;battleship&nbsp;game.</tt></dd></dl>
+</td></tr></table>
+</body></html>

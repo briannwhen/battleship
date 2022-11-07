@@ -1,0 +1,68 @@
+{
+  "playerShips":
+  [
+    {
+      "letterPos": "a",
+      "numberPos": 2,
+      "shipName": "Carrier",
+      "orientation": "h"
+    },
+    {
+      "letterPos": "g",
+      "numberPos": 7,
+      "shipName": "Battleship",
+      "orientation": "v"
+    },
+    {
+      "letterPos": "c",
+      "numberPos": 2,
+      "shipName": "Cruiser",
+      "orientation": "h"
+    },
+    {
+      "letterPos": "d",
+      "numberPos": 7,
+      "shipName": "Submarine",
+      "orientation": "h"
+    },
+    {
+      "letterPos": "e",
+      "numberPos": 1,
+      "shipName": "Destroyer",
+      "orientation": "v"
+    }
+  ],
+  "enemyShips":
+  [
+    {
+      "letterPos": "c",
+      "numberPos": 2,
+      "shipName": "Carrier",
+      "orientation": "v"
+    },
+    {
+      "letterPos": "g",
+      "numberPos": 3,
+      "shipName": "Battleship",
+      "orientation": "v"
+    },
+    {
+      "letterPos": "c",
+      "numberPos": 6,
+      "shipName": "Cruiser",
+      "orientation": "h"
+    },
+    {
+      "letterPos": "d",
+      "numberPos": 4,
+      "shipName": "Submarine",
+      "orientation": "h"
+    },
+    {
+      "letterPos": "e",
+      "numberPos": 6,
+      "shipName": "Destroyer",
+      "orientation": "h"
+    }
+  ]
+}
